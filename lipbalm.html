@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>手作護唇膏</title>
+    
+    <style>
+        body {
+            font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
+            background-color: #fdfaf5;
+            color: #5a5a5a;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            line-height: 1.8;
+        }
+
+        header {
+            background-image: url('image/image02.jpeg'); 
+            background-size: cover;
+            background-position: center;
+            color: white;
+            width: 100%;
+            text-align: center;
+            padding: 70px 0;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+        }
+
+        .container {
+            width: 92%;
+            max-width: 500px;
+            background: white;
+            padding: 30px 25px;
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            text-align: left;
+        }
+
+        .product-image {
+            width: 100%;
+            margin-bottom: 25px;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        h2 {
+            color: #606c38;
+            font-size: 22px;
+            text-align: center;
+            line-height: 1.4;
+            margin-bottom: 20px;
+        }
+
+        h4 {
+            color: #d4a373;
+            border-left: 4px solid #d4a373;
+            padding-left: 10px;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        .ingredient-item {
+            margin-bottom: 15px;
+        }
+
+        .ingredient-title {
+            font-weight: bold;
+            color: #333;
+            display: block;
+        }
+
+        .btn-group {
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        button {
+            background-color: #faedcd;
+            border: 1px solid #d4a373;
+            padding: 10px 18px;
+            margin: 4px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: bold;
+            color: #555;
+            transition: all 0.3s;
+        }
+
+        button.active {
+            background-color: #d4a373 !important;
+            color: white !important;
+            border-color: #b08968;
+        }
+
+        #info-box {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px dashed #d4a373;
+            border-radius: 15px;
+            background-color: #fffcf2;
+            min-height: 80px;
+            text-align: left;
+            font-size: 15px;
+        }
+
+        .link-group {
+            margin-top: 35px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .big-link-btn {
+            display: block;
+            background-color: #606c38;
+            color: white !important;
+            text-decoration: none;
+            padding: 22px;
+            font-size: 22px;
+            font-weight: bold;
+            border-radius: 50px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(96, 108, 56, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 style="margin:0; font-size: 28px;">純天然手工精油護唇膏</h1>
+        <p style="margin:10px 0 0; font-size: 18px;">100%天然成分．給你最安心的愛</p>
+    </header>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="image/image01.jpeg">
+        </div>
+
+        <h2>讓雙唇在純淨修護中<br>遇見最深層的療癒</h2>
+        
+        <p>這款護唇膏追求極致的平衡與純淨。我們嚴選高度滋潤的植物油，揉合天然精油，不僅深層鎖水，更在每次塗抹間，帶來身心的放鬆與修復。</p>
+
+        <h4>核心油脂：深層滋潤</h4>
+        
+        <div class="ingredient-item">
+            <span class="ingredient-title">有機甜杏仁油｜深層軟化</span>
+            富含維生素E，能溫柔軟化唇部角質，讓乾燥龜裂的雙唇重拾柔嫩。
+        </div>
+
+        <div class="ingredient-item">
+            <span class="ingredient-title">頂級初榨橄欖油｜強效保護</span>
+            形成透氣保護膜，有效防止水分流失，是脆弱肌膚的救星。
+        </div>
+
+        <div class="ingredient-item">
+            <span class="ingredient-title">嚴選小農蜂蠟｜天然鎖水</span>
+            天然抗菌特性讓滋養成分更持久，維持雙唇長效水潤。
+        </div>
+
+        <h4>理療級精油：修復饗宴</h4>
+        <p>精油不只帶來香氛，更賦予了修復肌膚與療癒情緒的獨特價值。</p>
+
+        <hr style="border: 0.5px solid #eee; margin: 30px 0;">
+
+        <h3 style="text-align:center;">精油功效查詢</h3>
+        <p style="text-align:center; font-size: 14px;">點擊下方按鈕了解精油特性</p>
+        
+        <div class="btn-group">
+            <button onclick="checkLipBalm('薰衣草')">薰衣草</button>
+            <button onclick="checkLipBalm('天竺葵')">天竺葵</button>
+            <button onclick="checkLipBalm('甜橙')">甜橙</button>
+            <button onclick="checkLipBalm('薄荷')">薄荷</button>
+            <button onclick="checkLipBalm('乳香')">乳香</button>
+        </div>
+
+        <div id="info-box">
+            點擊上方按鈕，小天使會告訴你精油功效
+        </div>
+
+        <div class="link-group">
+            <a href="https://myship.7-11.com.tw/general/detail/GM2601232614881" class="big-link-btn" target="_blank">🛒 點我購買護唇膏</a>
+            <a href="https://line.me/R/ti/p/@906nlmfs" class="big-link-btn" target="_blank">🏠 加入我們的line</a>
+        </div>
+    </div>
+
+    <footer style="margin-top: 30px; color: #bbb; font-size: 12px; text-align: center; width: 100%; padding-bottom: 20px;">
+        <p>© 2026板城靈糧堂出品</p>
+    </footer>
+
+    <script>
+        function checkLipBalm(type) {
+            const box = document.getElementById('info-box');
+            
+            /按鈕變色邏輯/
+            const allButtons = document.querySelectorAll('.btn-group button');
+            allButtons.forEach(btn => btn.classList.remove('active'));
+            allButtons.forEach(btn => {
+                if (btn.innerText === type) {
+                    btn.classList.add('active');
+                }
+            });
+
+            /開啟換行功能/
+            box.style.whiteSpace = "pre-line";
+
+            /根據點擊顯示內容/
+            if (type === '薰衣草') {
+                box.innerText = "薰衣草 (Lavender)｜舒緩與安撫\n精油界的「萬用修復師」。能有效鎮定受損肌膚，緩解乾裂帶來的不適感。淡雅草本香氣能放鬆神經，是壓力大或睡前使用的首選。";
+                box.style.color = "#6a4c93";
+            } else if (type === '天竺葵') {
+                box.innerText = "天竺葵 (Geranium)｜平衡與光澤\n具有優異的修復能力，能平衡肌膚油脂與水分。\n玫瑰般的優雅花香，能幫助平衡情緒，提振身心。";
+                box.style.color = "#bf5858";
+            } else if (type === '甜橙') {
+                box.innerText = "甜橙 (Sweet Orange)｜亮澤與愉悅\n含有維生素C，有助於提亮暗沉的唇色。\n清新甜美的柑橘香氣如同陽光般燦爛，能瞬間驅散憂鬱。";
+                box.style.color = "#f3722c";
+            } else if (type === '薄荷') {
+                box.innerText = "薄荷 (Peppermint)｜清爽與提神\n塗抹時帶來微微清涼感，能舒緩發燙或腫脹的雙唇。\n強大的穿透力香氣能幫助清醒頭腦。";
+                box.style.color = "#62952e";
+            } else if (type === '乳香') {
+                box.innerText = "乳香 (Frankincense)｜深度修護與凍齡\n具有卓越的抗老特性，能撫平細紋、深度滋養。\n沉穩的木質香氣能平定心神，帶來沉靜的力量。";
+                box.style.color = "#a27c4d";
+            }
+        }
+    </script>
+
+</body>
+</html>
